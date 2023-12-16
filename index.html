@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sanjay Chourasiya-Full Stack web devloper</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+
+	<script>
+       
+       function Submit(){
+        alert("You have successfully submit")
+       }
+
+
+
+        
+
+
+
+
+
+
+
+	    function postToGoogle() {
+	      var field1 = $("#the-name").val();
+	      var field2 = $("#the-email").val();
+	      var field3 = $("#the-phone").val();
+	      var field4 = $("#the-reason").val();
+          var field5 = $("#the-message").val();
+	
+
+	      $.ajax({
+	        url: "https://docs.google.com/forms/d/e/1FAIpQLSfOV-mRqa3anAi0I2UqIMp0RCDuGIPcSVkYb8-2DzKHdfTHZQ/formResponse",
+	          
+	        //add your google form generated numbers below which are also the 'names' of your inputs     
+	        data: {
+	          "entry.1479659180": field1,
+	          "entry.1933578503": field2,
+	          "entry.1092754217": field3,
+	          "entry.2012307079": field4,
+              "entry.1397122608": field5
+
+
+	        },
+	        type: "POST",
+	        dataType: "xml",
+	        success: function (d) {
+	          $('#contact').trigger('reset');
+	        },
+	        error: function (x, y, z) {
+	          $('#contact').trigger('reset');
+	        }
+	      });
+	      return false;
+	    }
+	  </script>
+<header>
+    <nav>
+        <div class="left"><b>Sanjay'Portfolio</b></div>
+        <div class="right">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact</a></li>
+                <li><a href="https://drive.google.com/file/d/1yybRyy330ToLNnDkTqTsyhWfk_egzk4I/view?usp=sharing">Download
+                        CV</a></li>
+
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="firstsection">
+        <div class="leftsection">
+              <span class="name">Hi There!</span>
+              <br>
+
+            <span id="element"></span>
+        </div>
+        <div class="rightsection">
+            <img class="glow"   src="sanjay.png" alt=" Devloper image is loading ">
+        </div>
+
+    </section>
+    <hr>
+
+<section class="secondsection">
+<div class="headingabout">
+   <u><h1>About</h1></u> 
+</div>
+    <div class="content">
+        <h2>I'm Sanjay chourasiya...</h2>
+        <p>
+            <ul class="about-content">
+                <li class="about-content-li">
+                  I'm a Final year undergraduate in AIDS🎓 from TCET ( Thakur College of Engineering and Technology )
+                </li>
+                <li class="about-content-li">
+                  I'm a passionate learner who's always willing to learn and work across technologies and domains...
+                </li>
+                <li class="about-content-li">
+                  I love to explore new technologies and leverage them to solve real-life problems...
+                </li>
+                <li class="about-content-li">
+                  I'm currently into FullStack Development ❄ and working on my Data Structures and Algorithms...
+                </li>
+                <li class="about-content-li">
+                  Apart from these, I have also worked on some Android & Machine Learning projects...
+                </li>
+            </ul>
+              
+            
+        </div>
+            
+        </p>
+
+        
+    </div>
+    </section>
+    <hr>
+    <section class="sectiontwo">
+        <div class="exp">
+            <span><u><b>Experiances</u></b> </span>
+
+        </div>
+        <div class="section2">
+            <div class="exp1">
+                <img src="NUll Class.png" alt="loading">
+                <div class="Null">
+                    <h1 class="Heading">Null Class </h1>
+                    <p> Position: Full stack web devloper</p>
+                    <p> Nov 2022 -jan 2023</p>
+                </div>
+            </div>
+
+
+
+
+            <div class="exp2">
+                <img src="Txon.png" alt="loading">
+                <div class="Null">
+                    <h1 class="Heading">Txon</h1>
+                    <p> Position: Full stack web devloper</p>
+                    <p> jan 2023 -Mar 2024</p>
+                </div>
+
+            </div>
+
+
+            <div class="exp3">
+                <img src="code clause.png" alt="loading">
+                <div class="Null">
+                    <h1 class="Heading">Code clause</h1>
+                    <p> Position: Full stack web devloper</p>
+                    <p> Mar 2022 -May 2023</p>
+                </div>
+
+
+
+    </section>
+    </div>
+
+    </div>
+
+    </section>
+    <hr>
+
+     <section class="section3">
+        <div class="exp">
+            <span><u><b>Projects</u></b> </span>
+
+        </div>
+        <div class="section2" id="project">
+            <div class="project1">
+                <img src="pro.png" alt="loading">
+                <div class="Null1">
+                    <h1 class="Heading">Fresh Basket</h1>
+                    <p> It online fruites and vegitable store </p>
+                    <p>To know more about the project..</p>
+                </div>
+            </div>
+
+
+
+
+            <div class="project2">
+                <img src="project2.png" alt="loading">
+                <div class="Null1">
+                    <h1 class="Heading">Open Bank</h1>
+                    <p> It is online bank</p>
+                    <p>To know more about the project..</p>
+                </div>
+
+            </div>
+
+
+            <div class="exp3">
+                <img src="project3.png" alt="loading">
+                <div class="Null1">
+                    <h1 class="Heading">BookAnywhere</h1>
+                    <p>It is online tiket booking platform</p>
+                    <p>To know more about the project..</p>
+
+                </div>
+
+
+
+    </section>
+    </div>
+
+    </div>
+    <section class="btn">
+    <div class="button1">
+       <a href="https://www.bigbasket.com/"><button>Check Live</button></a> 
+
+    </div>
+    <div class="button2">
+        <a href="https://paytm.com/"><button>Check Live</button></a> 
+        
+    </div>
+    <div class="button3">
+        <a href="https://in.bookmyshow.com/"><button>Check Live</button></a> 
+        
+    </div>
+</section>
+
+    </section>
+   
+<hr>
+    
+<form  method="post" id="Contact" onsubmit="return postToGoogle();">
+    <div class="contact1">
+    <h1>Contact Us</h1>
+    <p>Please take a moment to get in touch, we will get back to you shortly.</p>
+  </div>
+
+    <div class="column">
+      <label for="the-name">Your Name</label>
+      <input type="text" name="entry.1479659180" id="the-name">
+  
+      <label for="the-email">Email Address</label>
+      <input type="email" name="entry.1933578503" id="the-email">
+  
+      <label for="the-phone">Phone Number</label>
+      <input type="tel" name="entry.1092754217" id="the-phone">
+  
+      <label for="the-reason">How can we help you?</label>
+      <select name="entry.2012307079" id="the-reason">
+      <option value=""><b>Choose one</b></option>
+      <option value="web">I need web design services</option>
+      <option value="video">I need you to produce a video</option>
+      <option value="3d"></option>
+    </select>
+    </div>
+    <div class="column">
+      <label for="the-message">Message</label>
+      <textarea name="entry.1397122608" id="the-message"></textarea>
+      <label>
+      <input type="checkbox" name="newsletter" value="yes"> Join our mailing list?
+      </label>
+      <input  id= "submit-button" type="submit" value="submit" onclick="Submit()">
+    </div>
+  </form>
+
+
+</div>
+<hr>
+<footer>
+    <h1 class="copyright"> @Copyright Sanjay Chourasiya</h1>
+</footer>
+</main>
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+        strings: ['I am Full stack web devloper'],
+        typeSpeed: 50,
+    }); 
+</script>
+</body>
+
+</html>
